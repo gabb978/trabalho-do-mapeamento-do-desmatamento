@@ -7,7 +7,7 @@ int main()
 int interesse,problemas,questoes,questao1, questao2,questao3,questao4;
 char jogo,r='s',continuar,r2='s',prosseguir,prosseguir2,prosseguir4,r3='s';
 while(r=='s'){
-
+//ESCOLHA ENTRE AMAZÔNIA E PARÁ
 	printf("                         BEM-VINDO(A) AO CENTRO DE INFORMAÇÕES DE MAPEAMENTO DO DESMATAMENTO\n");
 	printf("\n");
 	printf("                                          ESCOLHA UMA DAS ÁREAS AFETADAS\n");
@@ -15,8 +15,10 @@ while(r=='s'){
 	printf("                                                  1- AMAZÔNIA \n");
 	printf("                                                  2- PARÁ     \n");
 	scanf("%d",&interesse);
+	    //AMAZÔNIA
 		switch(interesse){
 			case 1:
+				//DESMATAMENTO E REFLORESTAMENTO
  				printf("\n");
 				printf("                                                 AMAZÔNIA\n");
 				printf("                                 A AMAZÔNIA E A MAIOR FLORESTA TROPICAL DO MUNDO,\n");
@@ -28,8 +30,9 @@ while(r=='s'){
 				printf("                                        2- INFORMAÇÕES DO REFLORESTAMENTO\n");
 				scanf("%d",&questoes);
 			switch(questoes){
-			
+				// AREA DO DESMATAMENTO
 				case 1:
+					// ESCOLHA DA ÁREA DESMATAMENTO
 					printf(" 1- ÁREAS DESMATADAS\n");
 					printf("\n");
 					printf(" 2- CAUSAS\n");
@@ -43,6 +46,7 @@ while(r=='s'){
 					printf(" 6- COMO IMPEDIR ISSO\n");
 					scanf("%d",&problemas);
 				switch(problemas){
+					// ÁREAS DESMATADAS                            (DESMATAMETO)
 					case 1:
 						printf("                                    ÁREAS DESMATADAS\n");
 						printf(" \n");
@@ -56,6 +60,7 @@ while(r=='s'){
 						scanf("%s",&r);
 						break;
 					case 2:
+						// PRINCIPAIS CAUSAS DO DESMATAMENTO       (DESMATAMENTO)
 						printf("                             PRINCIPAIS CAUSAS DO DESMATAMENTO\n"),
 						printf("\n");
 						printf("                      PRIMEIRO MOTIVO E A IMPUNIDADE DE CRIMES AMBIENTAIS,\n");
@@ -67,6 +72,7 @@ while(r=='s'){
 						scanf("%s",&r);
 						break;
 					case 3:
+						// TRIBOS AFETADAS PELO DESMATAMENTO      (DESMATAMENTO)
 						printf("                             TRIBOS AFETADAS PELO DESMATAMENTO\n");
 						printf("\n");
 						printf("                       CERCA DE 23 POR CENTO DO TERRITORIO AMAZÔNICO E CONSTITUIDO\n");
@@ -77,6 +83,7 @@ while(r=='s'){
 						scanf("%s",&r);
 						break;
 					case 4:
+						// ESPÉCIES AFETADAS PELO DESMATAMENTO   (DESMATAMENTO)
 						printf("                           ESPÉCIES AFETADAS PELO DESMATAMENTO\n");
 						printf("\n");
 						printf("                       AS PRINCIPAIS ESPÉCIES AFETADAS SÃO A ONÇA-PINTADA,\n");
@@ -87,6 +94,7 @@ while(r=='s'){
 						scanf("%s",&r);
 						break;
 					case 5:
+						// ARVORES EXTINTAS                      (DESMATAMENTO)
 						printf("                                     ÁRVORES EXTINTAS\n");
 						printf("\n");
 						printf("                              MUITAS QUE ESTÃO AMEAÇADAS DE EXTINÇÃO SÃO:\n");
@@ -98,6 +106,7 @@ while(r=='s'){
 						scanf("%s",&r);
 						break;
 					case 6:
+						// COMO IMPEDIR QUE CONTINUE              (DESMATAMENTO)
 						printf("                                  COMO IMPEDIR QUE CONTINUE\n");
 						printf("\n");
 						printf("                             HÁ CINCO FORMAS DE IMPEDIR O DESMATAMENTO\n");
@@ -110,13 +119,17 @@ while(r=='s'){
 						scanf("%s",&r);
 						break;
 }
+break;
 case 2:
+					// AREA DO REFLORESTAMENTO                   (REFLORESTAMENTO)
 					printf(" 1- COMO FUNCIONA O REFLORESTAMENTO\n");
 					printf("\n");
 					printf(" 2- FAÇA O REFLORESTAMENTO NA PRATICA\n");
 					scanf("%d",&problemas);
 				switch(problemas){
 				case 1:
+					
+					// PRIMEIRA OPÇÃO                        (REFLORESTAMENTO)
 					printf("                               COMO FUNCIONA O REFLORESTAMENTO\n");
 					printf("\n");
 					printf("                        O REFLORESTAMENTO NADA MAIS É QUE UMA TÉCNCA QUE\n");
@@ -125,11 +138,16 @@ case 2:
 					printf("                        RURAL, AS TÉCNICAS USADAS PARA O REFLORESTAMENTO\n");
 					printf("                        É NADA MAIS NADA MENOS QUE O PLANTIO DE MUDAS\n");
 					printf("\n");
+					
+					// QUIZ                                  (REFLORESTAMENTO)
 					printf(" QUER PARTICIPAR DO JOGO DO RFLORESTAMENTO [s/n]\n");
 					scanf(" %s",&jogo);
 					if (jogo=='s'){
-						while(r2=='s'){
 						
+						// SEGUNDO LOOPING                   (REFLORETAMENTO)
+						while(r2=='s'){
+							
+						// PRIMEIRA PERGUNTA                 (REFLORESTAMENTO)
 						printf(" SEJA-BEMVIND(A), AO JOGO DO REFLORESTAMENTO\n");
 						printf("\n");
 						printf("PRIMEIRA PERGUNTA\n");
@@ -142,27 +160,37 @@ case 2:
 						printf("4- JOGARIA DEJETOS NA RUA OU EM LUGARES INAPROPIADOS\n");
 						scanf("%d",&questao1);
 						switch(questao1){
+							
+							//AQUI COMEÇA AS ALTERNATIVAS
 							case 1:
+								
+								// PRIMEIRA ALTERNATIVA              (PRIMEIRA PERGUNTA)
 								printf("                                    INCORRETO\n");
 								printf("                               DESMATAR UMA AREA ALÉM DE\n");
 								printf("                               SER UMA AÇÃO ILEGAL(CRIMINOSA),\n");
 								printf("                               PREJUTICA MUITO NO REFLORESTAMENTO\n");
 								printf("                               E AJUDA NA PERCA DA BIODIVERSIDADE\n");
 								printf("\n");
-								printf(" QUER CONTINUAR O JOGO?\n");
+								printf(" QUER CONTINUAR O JOGO? [s/n]\n");
 								scanf("%s",&r2);
-								break;	
+								break;
+									
 							case 2:
+								
+								// SEGUNDA ALTERNATIVA                (PRIMEIRA PERGUNTA)
 								printf("                                    INCORRETO\n");
 								printf("                           A EMISSÃO CAUSA MUDANÇAS CLIMATICAS,\n");
 								printf("                           ACIDIFICAÇÃO DO SOLO, AUMENTO DE DOENÇAS\n");
 								printf("                           DISTORBIOS ECOLOGICOS, ISSO MOSTRA COMO\n");
 								printf("                           IMPACTA NEGATIVAMENTE NO REFLORESTAMENTO\n");
 								printf("\n");
-								printf(" QUER CONTINUAR O JOGO?\n");
+								printf(" QUER CONTINUAR O JOGO? [s/n]\n");
 								scanf("%s",&r2);	
 								break;
+								
 							case 3:
+								
+								// TERCEIRA ALTERNATIVA                 (PRIMEIRA PERGUNTA)
 								printf("                                   CORRETO PARABENS!!\n");
 								printf("                            ISSO PODE SIM AJUDAR O REFLORESTAMENTO\n");
 								printf("                            COM O AUMENTO DA CONSIENTIZAÇÃO, CAPTAÇÃO\n");
@@ -170,8 +198,10 @@ case 2:
 								printf("                            SÃO ESSÊNCIAIS PARA ENFRENTAR A DEGRADAÇÃO\n");
 								printf("                            AMBIENTAL.\n");
 								printf("\n");
-								printf(" QUER PROSSEGUIR?\n");
+								printf(" QUER PROSSEGUIR? [s/n]\n");
 								scanf("%s",&prosseguir);
+								
+								// SEGUNDA PERGUNTA
 								if(prosseguir=='s'){
 								printf("SEGUNDA PERGUNTA\n");
 								printf("\n");
@@ -182,8 +212,12 @@ case 2:
 								printf("3- DIMINUIÇÃO DOS RECURSO HÍDRICOS\n");
 								printf("4- MELHORA NA QUALIDADE DO AR E SEQUESTRO DO DE CARBONO\n");
 								scanf("%d",&questao2);
+								
+								// COMEÇO DAS ALTERNATIVAS
 								switch(questao2){
 									 case 1:
+									 	
+									 	// PRIMEIRA ALTERNATIVA                   (SEGUNDA PERGUNTA)
 									 	printf("                                     INCORRETO\n");
 										printf("                           O AUMENTO DA EROSÃO DO SOLO CAUSA A PERDA DA\n");
 										printf("                           CAMADA FÉRTIL DO SOLO, DIFICUDADE NA ESTABILIZAÇÃO\n");
@@ -191,10 +225,13 @@ case 2:
 										printf("                           AUMENTO DOS CUSTOS DE REFLORESTAMENTO ENTRE OUTROS...\n ");
 										printf("                           (INDIRETA)\n");
 										printf("\n");
-										printf(" QUER CONTINUAR O JOGO?\n");
+										printf(" QUER CONTINUAR O JOGO? [s/n]\n");
 										scanf("%s",&r2);
 										break;
+										
 									case 2:
+										
+										// SEGUNDA ALTERNATIVA                    (SEGUNDA PERGUNTA)
 										printf("                                     INCORRETO\n");
 										printf("                           A REDUÇÃO DA BIODIVERSIDADE PREJUDICA O REFLORESTAMENTO\n");
 										printf("                           DE VÁRIAS MENIRAS, AFETANDO A SAÚDE DE ECOSSISTEMA\n");
@@ -202,10 +239,13 @@ case 2:
 										printf("                           DE RECUPERAÇÃO NO LOCAL\n ");
 										printf("                           (INDIRETA)\n");
 										printf("\n");
-										printf(" QUER CONTINUAR O JOGO?\n");
+										printf(" QUER CONTINUAR O JOGO? [s/n]\n");
 										scanf("%s",&r2);
 										break;
+										
 									case 3:
+										
+										// TERCEIRA ALTERNATIVA                   (SEGUNDA PERGUNTA)
 										printf("                                     INCORRETO\n");
 									    printf("                           A DIMINUIÇÃO DOS RECURSO HÍDRICOS PRJUDICA O\n");
 										printf("                           REFLORESTAMENTO DE DIVERSAS MENEIRAS, IMPACTANDO\n");
@@ -213,18 +253,23 @@ case 2:
 										printf("                           ÁRVOVES E ACATANDO MUDANÇAS CLIMÁTICAS EXTREMAS\n ");
 										printf("                           (INDIRETA)\n");								
 										printf("\n");
-										printf(" QUER CONTINUAR O JOGO?\n");
+										printf(" QUER CONTINUAR O JOGO? [s/n]\n");
 										scanf("%s",&r2);
 										break;
+										
 									case 4:
+										
+										// QUARTA ALTERNATIVA                     (SEGUNDA PERGUNTA)
 										printf("                                     CORRETO PARABENS!!\n");
 										printf("                           A MELHORA NA QUALIDADE DO AR E O SEQUESTRO DE \n");
 										printf("                           CARBONO SÃO FATORES QUE PODEM BENEFICIAR SIGNIFICAMENTE\n");
 										printf("                           REFLORESTAMENTO CRIANDO UM AMBIENTE MAIS PROPÍCIO PARA\n ");
 										printf("                           O CRESCIEMENTO DAS ARVORES E CONSERVAÇÃO DAS FLORESTAS.\n ");									
 										printf("\n");
-										printf("QUER PROSSEGUIR?\n");
+										printf("QUER PROSSEGUIR?[s/n]\n");
 										scanf("%s",&prosseguir2);
+										
+										// TERCEIRA PERGUNTA
 										if(prosseguir2=='s'){
 											printf("TERCEIRA PERGUNTA\n");
 											printf("\n");
@@ -239,21 +284,30 @@ case 2:
 											printf("3- TODAS ALTERNATIVAS ESTÃO CORRETAS\n");
 											printf("\n");
 											scanf("%d",&questao3);
+											
+											// COMEÇO DAS ALTERNATIVAS      (TERCEIRA PERGUNTA)
 											switch (questao3){
 												case 1:
+													
+													// PRIMEIRA ALTERNATIVA
 													printf("                                     INCORRETO\n");
 													printf("                            NADA PODE REFLETIR A LUZ AO PONTO\n");
 													printf("                            DE MUDAR A TEMPERATURA, SÓ A NEVE.\n");
 													printf("\n");
-													printf(" QUER CONTINUAR O JOGO?\n");
+													printf(" QUER CONTINUAR O JOGO? [s/n]\n");
 													scanf("%s",&r2);
 													break;
+													
 												case 2:
+													
+													// SEGUNDA ALTERNATIVA
 													printf("                                     CORRETO!!\n");
 													printf("                         PARABENS VOCÊ ACERTOU,AJDA A COMBATER ABSORVENDO\n");
 													printf("                         O DIÓXIDO DE CARBONO.\n");
 													printf("QUER PROSSEGUIR?");
 													scanf("%s",&prosseguir4);
+													
+													// QUARTA PERGUNTA
 													if(prosseguir4=='s'){
 														printf("ULTIMA PERGUNTA\n");
 														printf("\n");
@@ -268,8 +322,12 @@ case 2:
 														printf("ENQUANTO FLORESTAMENTO É A PRÁTICA DE PLANTAR ÁRVORES EM ÁREAS ONDE A FLORESTA FOI REMOVIDA");
 														printf("\n");
 														scanf("%d",&questao4);
+														
+														// COMEÇO ALTERNATIVA              (QUARTA PERGUNTA)
 														switch(questao4){
 															case 1:
+																
+																// PRIMEIRA ALTERNATIVA    (QUARTA PERGUNTA)    
 																printf("                  CORRETO!!                        ");
 																printf("    O REFLORESTAMENTO CONSISTE NA RESTAURAÇÃO DE ÁREAS DESMATADAS");
 																printf("    E O FLORESTAMENTO É A CRIAÇÃO DE NOVAS FLORESTAÇÕES");
@@ -282,19 +340,24 @@ case 2:
 																break;
 																
 															case 2:
+																
+//////															SEGUNDA ALTERNATIVA    (QUARTA PERGUNTA)
 																printf("                 INCORRETO!!                      ");
 																printf(" O REFLORESTAMENTO E O FLORESTAMENTO NÃO SÃO A MESMA COISA AMBOS");
 																printf(" TEM SIGNIFICADOS DIFERENTES");
 																printf("\n");
-																printf(" QUER CONTINUAR O JOGO?\n");
+																printf(" QUER CONTINUAR O JOGO? [s/n]\n");
 																scanf("%s",&r2);
 																break;
+																
 															case 3:
+																
+																// TERCEIRA ALTERNATIVA (QUARTA PERGUNTA)
 																printf("                 INCORRETO!!                       ");
 																printf("  POIS O REFLORESTAMENTO CONSISTE NA RESTAURAÇÃO DE ÁREAS DESMATADAS ");
 																printf("  E O FLORESTAMENTO É A CRIAÇÃO DE NOVAS FLORESTACÕES ");
 																printf("\n");
-																printf(" QUER CONTINUAR O JOGO?\n");
+																printf(" QUER CONTINUAR O JOGO? [s/n]\n");
 																scanf("%s",&r2);
 																break;
 																
@@ -303,10 +366,12 @@ case 2:
 														
 													}
 												case 3:
+													
+//													TERCEIRA ALTERNATIVA         (TERCEIRA PERGUNTA)
 													printf("                                     INCORRETO\n");
 													printf("                         A ALTERNATIVA CERTA É A NûMERO 2\n");
 													printf("\n");
-													printf(" QUER CONTINUAR O JOGO?\n");
+													printf(" QUER CONTINUAR O JOGO? [s/n]\n");
 													scanf("%s",&r2);
 													break;
 							
@@ -315,15 +380,18 @@ case 2:
 							}
 							}
 							break;
+							
 									case 4:
+//							 			 QUARTA ALTERNATIVA            (PRIMEIRA PERGUNTA)
 										printf("                                     INCORRETO\n");
 										printf("                           ALÉM DISSO SER UMA AÇÃO ILEGAL(CRIMINOSA)\n");
 										printf("                           ISSO TAMBÉM PODE CAUSAR INCHENTES E AGRAVAR\n");
 										printf("                           NO DESMATAMENTO E ATRASAR O PROCESSO DE\n");
 										printf("                           REFLORESTAMENTO.\n");
 										printf("\n");
-										printf(" QUER CONTINUAR O JOGO?\n");
+										printf(" QUER CONTINUAR O JOGO? [s/n]\n");
 										scanf("%s",&r2);
+										break;
 											
 }
 				
@@ -332,105 +400,125 @@ case 2:
 }
 											
 }
-
+break;
+//                                                             PARÁ
 case 2:
 while (r3=='s'){
 	
+	                    // ESCOLHA DESMATAMENTO E REFLORESTAMENTO DO PARÁ
+	
 						printf("\n");
-						printf("                                             PARA\n");
+						printf("                                                  PARA\n");
 						printf("                              PARÁ É O MAIOR ESTADO DA REGIÃO DO NORTE DO BRASIL,\n")	;
 						printf("                              CONCENTRANDO QUASE A METADE DE SUA POPULAÇÃO.\n");
 						printf("                              POSSUI RELEVO POUCO ACIDENTADO E SITUA-SE INTEIRAMENTE\n");
-						printf("                                       AMAZÔNIA. BANDEIRA DO PARÁ\n.");
+						printf("                              AMAZÔNIA. BANDEIRA DO PARÁ\n.");
 						
-							printf("\n");
-				printf("                               QUAIS DESSSAS QUESTOES LHE DESPERTA MAOIR INTERESSE\n");
-				printf("                                        1- INFORMACOES DO DESMATAMENTO\n");
-				printf("                                        2- INFORMACOES DO REFLORESTAMENTO\n");
-				scanf("%d",&questoes);
+						printf("\n");
+						printf("                              QUAIS DESSSAS QUESTOES LHE DESPERTA MAOIR INTERESSE\n");
+						printf("                                       1- INFORMACOES DO DESMATAMENTO\n");
+						printf("                                       2- INFORMACOES DO REFLORESTAMENTO\n");
+						scanf("%d",&questoes);
 			switch(questoes){
 			
 				case 1:
+					
+					// ESCOLHA DESMATAMENTO
 					printf(" 1- AREAS DESMATADAS\n");
 					printf(" 2- CAUSAS\n");
 					printf(" 3- TRIBOS AFETADAS\n");
 					printf(" 4- ESPECIES AFETADAS\n");
 					printf(" 5- ARVORES EXTINTAS\n");
-					scanf("%d",&problemas);
-				switch(problemas){
+					scanf("%d",&problemas);	
+					switch(problemas){
+					// ESCOLHAS DESMATAMENTO
 				
-				
+				// AREAS DESMATADAS                          (DESMATAMENTO)
 				case 1:
-				printf("                                        ÁREAS DESMATADAS");
+				printf("                                                     ÁREAS DESMATADAS");
 			    printf("\n");
 				printf("                                    NOS ÚLTIMOS 12 MESES,DE AGOSTO DE 2021 A JULHO DE 2022,\n");
 				printf("                                    FORAM DERRUBADOS 3.858 KM² DE FLORESTAS PARAENSES, O QUE\n");
 				printf("                                    REPRESENTA 36% DO TOTAL DEVASTADO NA AMAZÔNIA (10.781KM².\n)");
 				printf("                                    ISSO É EQUIVALENTE A QUATRO VEZES O TAMANHO DE BELÉM\n");
 				printf("\n");
-						printf(" QUE CONTINUAR O PROGRAMA?\n");
-						scanf("%s",&r3);
-						break;
-						
+				printf(" QUE CONTINUAR O PROGRAMA? [s/n]\n");
+				scanf("%s",&r3);
+				break;
+				
 				case 2:
-				printf("                                              PRINCIPAIS CAUSAS DO DESMATAMENTO\n");
-				printf("\n");
-				printf("                                     AS PRINCIPAIS CAUSAS DO DESMATAMENTO SÃO:DENSIDADE POPULACIONAL\n");
-				printf("                                     CRESCIMENTO ECONÔMICO; E EXPLORAÇÃO ILEGAL DE RECURSOS NATURAIS\n");
-				printf("                                     E ALGUNS ESTADOS COMO TOCANTINS,MARANHÂO E RONDÔNIA JÁ DESMATARAM\n");
-				printf("                                     PRATICAMENTE TODAS AS SUAS FLORESTAS.\n");
+				
+					// CAUSAS                                  (DESMATAMENTO)
+					printf("                                               PRINCIPAIS CAUSAS DO DESMATAMENTO\n");
 					printf("\n");
-						printf(" QUE CONTINUAR O PROGRAMA?\n");
-						scanf("%s",&r3);
-						break;
-					case 3:
-						printf("                             TRIBOS AFETADAS PELO DESMATAMENTO\n");		
-						printf("\n");
-						printf("                             OS TERRITÓRIOS QUE MAIS SOFRERAM COM QUEIMADAS E DESMATAMENTOS ILEGAIS\n");
-						printf("                             NESTE ÚLTIMO SEMESTRE FORAM AS TERRAS INDÍGENAS URU-EU-WAU-WAU(RO),\n");
-						printf("                             JACAREÚBA/KATAWIXI(AM),MUNDURUKU (PA)E ARARIBÓIA (MA).\n");
-							printf("\n");
-						printf(" QUE CONTINUAR O PROGRAMA?\n");
-						scanf("%s",&r3);
-						break;
-					case 4:
-						printf("                           ESPECIES AFETADAS PELO DESMATAMENTO\n");
-						printf("\n");
-						printf("                           1-GATO-MARACAJÁ(leopardus wiedii)\n");
-						printf("                           2-PEIXE BOI(Trichechus inunguis\n)");
-						printf("                           3-ARARAJUBA(Guaruba guarouba\n)");
-						printf("                           4-GAVIÃO REAL(Harpia harpyja\n)");
-						printf("                           5-ONÇA-PINTADA(Panthera onca\n)");
-						printf("                           6-ONÇA PARDA(Puma concolor)\n");
-						printf("                           7-UACARI(Cacajao hosomi\n)");
-						
+					printf("                                     AS PRINCIPAIS CAUSAS DO DESMATAMENTO SÃO:DENSIDADE POPULACIONAL\n");
+					printf("                                     CRESCIMENTO ECONÔMICO; E EXPLORAÇÃO ILEGAL DE RECURSOS NATURAIS\n");
+					printf("                                     E ALGUNS ESTADOS COMO TOCANTINS,MARANHÂO E RONDÔNIA JÁ DESMATARAM\n");
+					printf("                                     PRATICAMENTE TODAS AS SUAS FLORESTAS.\n");
 					printf("\n");
-						printf(" QUE CONTINUAR O PROGRAMA?\n");
-						scanf("%s",&r3);
-						break;
-					case 5:
-						printf("                                     ARVORES EXTINTAS\n");
-						printf("\n");
-						printf("                            1-ESTOPA\n");
-						printf("                            2-CACHIMBEIRO\n");
-						printf("                            3-PAU-DE-CACHIMBO\n");
-						printf("                            4-PAU-ESTOPA\n");
-						printf("                            5-MUSSAMBÊ\n");
-						printf("                            6-COATINGA\n");
-						break;
+					printf(" QUE CONTINUAR O PROGRAMA? [s/n]\n");
+					scanf("%s",&r3);
+					break;
+					
+				case 3:
+					
+					// TRIBOS AFETADAS                          (DESMATAMENTO)                 
+					printf("                                                TRIBOS AFETADAS PELO DESMATAMENTO\n");		
+					printf("\n");
+					printf("                                     OS TERRITÓRIOS QUE MAIS SOFRERAM COM QUEIMADAS E DESMATAMENTOS ILEGAIS\n");
+					printf("                                     NESTE ÚLTIMO SEMESTRE FORAM AS TERRAS INDÍGENAS URU-EU-WAU-WAU(RO),\n");
+					printf("                                     JACAREÚBA/KATAWIXI(AM),MUNDURUKU (PA)E ARARIBÓIA (MA).\n");
+					printf("\n");
+					printf(" QUE CONTINUAR O PROGRAMA? [s/n]\n");
+					scanf("%s",&r3);
+					break;
+					
+				case 4:
+					
+					// ESPRECIES AFETADAS PELO DESMATAMENTO      (DESMATAMENTO)
+					printf("                                               ESPECIES AFETADAS PELO DESMATAMENTO\n");
+					printf("\n");
+					printf("                                      1-GATO-MARACAJÁ(leopardus wiedii)\n");
+					printf("                                      2-PEIXE BOI(Trichechus inunguis\n)");
+					printf("                                      3-ARARAJUBA(Guaruba guarouba\n)");
+					printf("                                      4-GAVIÃO REAL(Harpia harpyja\n)");
+					printf("                                      5-ONÇA-PINTADA(Panthera onca\n)");
+					printf("                                      6-ONÇA PARDA(Puma concolor)\n");
+					printf("                                      7-UACARI(Cacajao hosomi\n)");
+					
+					printf("\n");
+					printf(" QUE CONTINUAR O PROGRAMA? [s/n]\n");
+					scanf("%s",&r3);
+					break;
+					
+				case 5:
+					
+					// ARVORES EXTINTAS                        (DESMATAMENTO)
+					printf("                                               ARVORES EXTINTAS\n");
+					printf("\n");
+					printf("                                      1-ESTOPA\n");
+					printf("                                      2-CACHIMBEIRO\n");
+					printf("                                      3-PAU-DE-CACHIMBO\n");
+					printf("                                      4-PAU-ESTOPA\n");
+					printf("                                      5-MUSSAMBÊ\n");
+					printf("                                      6-COATINGA\n");
+					break;
 }			
-break;							
-case 2:
-						printf(" 1-COMO FUNCIONA O RESFLORESTAMENTO\n");
-						printf("\n");
-						printf("2-FAÇA O REFLORESTAMENTO NA PRATICA\n ");
-						printf("\n");
-	                    scanf("%d",&problemas);
-				        switch(problemas){
+                break;
+//			 REFLORESTAMENTO					
+            	case 2:
+            	
+//            		ALTERNATIVAS REFLORESTAMENTO
+					printf(" 1-COMO FUNCIONA O RESFLORESTAMENTO\n");
+					printf("\n");
+					printf("2-FAÇA O REFLORESTAMENTO NA PRATICA\n ");
+					printf("\n");
+	                scanf("%d",&problemas);
+					switch(problemas){
 				        	
-				        	
-				        	case 1:	
-							printf("\n");
+
+		    	case 1:	
+					printf("\n");
 }
 }
 }
